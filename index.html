@@ -3,7 +3,87 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>VK Wellness – M2F Massage Hyderabad</title>
+<title>VK Wellness – M2F B2B Massage Hyderabad | Book Online ₹999</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="VK Wellness – Premium M2F Body to Body Massage in Hyderabad. Full Body Relaxation & B2B Massage for women. Book online. Available all areas – Banjara Hills, Jubilee Hills, Madhapur, Gachibowli, Hitech City. ₹999 onwards."/>
+  <meta name="keywords" content="M2F massage Hyderabad, B2B massage Hyderabad, body to body massage Hyderabad, massage for women Hyderabad, relaxation massage Hyderabad, full body massage Hyderabad, wellness massage Hyderabad, female massage Hyderabad, VK Wellness, massage Banjara Hills, massage Jubilee Hills, massage Madhapur, massage Gachibowli, massage Hitech City, M2F B2B massage, therapeutic massage Hyderabad"/>
+  <meta name="author" content="VK Wellness Hyderabad"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="googlebot" content="index, follow"/>
+  <link rel="canonical" href="https://vkwellness.netlify.app"/>
+
+  <!-- Open Graph (for WhatsApp & Facebook previews) -->
+  <meta property="og:title" content="VK Wellness – M2F B2B Massage Hyderabad"/>
+  <meta property="og:description" content="Premium M2F Body to Body Massage for women in Hyderabad. Relaxation & B2B Massage. Book online. ₹999 onwards. Available citywide."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://vkwellness.netlify.app"/>
+  <meta property="og:locale" content="en_IN"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="VK Wellness – M2F Massage Hyderabad"/>
+  <meta name="twitter:description" content="Premium M2F Body to Body Massage for women in Hyderabad. Book online. ₹999 onwards."/>
+
+  <!-- Schema.org Structured Data (helps Google understand your business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "VK Wellness",
+    "description": "Premium M2F Body to Body Massage for women in Hyderabad. Full Body Relaxation and B2B Massage services.",
+    "url": "https://vkwellness.netlify.app",
+    "telephone": "+918208853527",
+    "email": "vkwellness@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.3850",
+      "longitude": "78.4867"
+    },
+    "openingHours": "Mo-Su 09:00-22:00",
+    "priceRange": "₹999 - ₹1499",
+    "servesCuisine": "Wellness & Massage",
+    "areaServed": [
+      "Banjara Hills", "Jubilee Hills", "Madhapur",
+      "Gachibowli", "Hitech City", "Kondapur",
+      "Hyderabad", "Secunderabad"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Massage Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Body Relaxation Massage",
+            "description": "A gentle full body massage for deep relaxation and stress relief",
+            "duration": "PT60M"
+          },
+          "price": "999",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Body B2B Massage",
+            "description": "Therapeutic body to body massage for profound relaxation",
+            "duration": "PT90M"
+          },
+          "price": "1499",
+          "priceCurrency": "INR"
+        }
+      ]
+    }
+  }
+  </script>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -12,7 +92,7 @@
   --terra:#9c6b4a;--deep:#3a2318;--accent:#c08b5c;
   --light:#f7ede0;--green:#25D366;
 }
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;} * {scroll-behavior:smooth;}
 body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
 
 /* ── NAV ── */
@@ -238,11 +318,11 @@ footer{text-align:center;padding:48px 24px;border-top:1px solid var(--warm);}
 <nav>
   <a class="nav-logo" href="#">VK <em>Wellness</em></a>
   <div class="nav-links">
-    <a href="#services">Services</a>
-    <a href="#booking">Book</a>
-    <a href="#chat">Help</a>
+    <a href="#services" onclick="scrollToSection('services');return false;">Services</a>
+    <a href="#booking" onclick="scrollToSection('booking');return false;">Book</a>
+    <a href="#chat" onclick="scrollToSection('chat');return false;">Help</a>
     <span class="nav-admin-btn" onclick="openAdminLogin()">Admin</span>
-    <a href="#booking" class="nav-book btn">Book Now</a>
+    <a href="#booking" class="nav-book btn" onclick="scrollToSection('booking');return false;">Book Now</a>
   </div>
 </nav>
 
@@ -253,8 +333,8 @@ footer{text-align:center;padding:48px 24px;border-top:1px solid var(--warm);}
   <p class="hero-tagline">"If you want to feel butterflies in this chaotic city — you are welcome, Madam."</p>
   <div class="divider"></div>
   <div class="hero-cta">
-    <a href="#booking" class="btn btn-primary">Book a Session</a>
-    <a href="#services" class="btn btn-outline">Our Services</a>
+    <a href="#booking" class="btn btn-primary" onclick="scrollToSection('booking');return false;">Book a Session</a>
+    <a href="#services" class="btn btn-outline" onclick="scrollToSection('services');return false;">Our Services</a>
   </div>
 </section>
 
@@ -798,6 +878,16 @@ function exportCSV(){
   const a=document.createElement('a'); a.href=url; a.download='vkwellness_bookings.csv'; a.click();
 }
 
+
+
+// ── SMOOTH SCROLL FIX ──
+function scrollToSection(id){
+  const el = document.getElementById(id);
+  if(el){
+    const top = el.getBoundingClientRect().top + window.pageYOffset - 70;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+}
 
 // ── SOUND & EMAIL NOTIFICATIONS ──
 const ADMIN_EMAIL = 'vkwellness@gmail.com';
